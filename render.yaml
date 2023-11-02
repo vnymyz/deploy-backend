@@ -1,5 +1,5 @@
 services:
   - name: backend
-    buildCommand: yarn
+    buildCommand: npm install
     startCommand: npm start
     nodeVersion: 16
