@@ -47,7 +47,7 @@ app.use(cors());
 
 // ROUTES MIDDLEWARE
 app.use("", authRoutes);
-app.use("/api", postRoute);
+app.use("", postRoute);
 app.use("/api", feebackRoute);
 app.use("/api", kategoriRoutes);
 
