@@ -46,7 +46,7 @@ app.use(cookieParser());
 app.use(cors());
 
 // ROUTES MIDDLEWARE
-app.use("/api", authRoutes);
+app.use("", authRoutes);
 app.use("/api", postRoute);
 app.use("/api", feebackRoute);
 app.use("/api", kategoriRoutes);
