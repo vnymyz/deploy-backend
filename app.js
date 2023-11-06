@@ -46,10 +46,10 @@ app.use(cookieParser());
 app.use(cors());
 
 // ROUTES MIDDLEWARE
-app.use("/api", authRoutes);
-app.use("/api", postRoute);
-app.use("/api", feebackRoute);
-app.use("/api", kategoriRoutes);
+app.use("", authRoutes);
+app.use("", postRoute);
+app.use("", feebackRoute);
+app.use("", kategoriRoutes);
 
 // error middleware
 app.use(errorHandler);
