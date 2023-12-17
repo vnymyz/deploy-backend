@@ -43,7 +43,10 @@ app.use(
   })
 );
 app.use(cookieParser());
-app.use(cors());
+app.use(cors({
+  origin: "https://gembulcimot.netlify.app",
+  credentials: true,
+}));
 
 // ROUTES MIDDLEWARE
 app.use("", authRoutes);
